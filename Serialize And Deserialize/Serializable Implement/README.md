@@ -1,3 +1,3 @@
 # 实现Serializable接口进行序列化与反序列化
-Serializable接口会自动序列化实例中所有可序列化变量
+Serializable接口会自动序列化实例中所有可序列化变量</br>
 实例对象中被static和transient修饰的变量不会被序列化
