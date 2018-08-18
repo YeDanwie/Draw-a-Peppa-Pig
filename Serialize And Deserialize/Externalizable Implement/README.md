@@ -1,1 +1,3 @@
 # 实现Externalizable接口进行序列化与反序列化
+Externalizable接口需要手动设置实例中哪些变量要序列化</br>
+不论变量是否被static或transient修饰，都可被序列化
