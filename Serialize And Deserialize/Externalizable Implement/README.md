@@ -1,0 +1,1 @@
+# 实现Externalizable接口进行序列化与反序列化
