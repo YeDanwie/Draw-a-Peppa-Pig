@@ -1,0 +1,20 @@
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+/**
+ * @description Java反射机制，在编译之后(运行时)进行，可查看并修改类的属性、方法。
+ *              Java泛型集合在编译阶段会检查变量的类型，但实际并不限定存储哪种类型的变量。
+ *             使用反射机制可以绕过编译，在同一个泛型集合内存储多种类型的变量
+ */
+public class TestReflect {
+	public static void main(String[] args) throws Exception {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(233);
+		list.add(455);
+		Method method = list.getClass().getMethod("add", Object.class);
+		method.invoke(list, "Java反射机制实例。");
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+	}
+}
